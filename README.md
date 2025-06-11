@@ -5,11 +5,11 @@
 
 ## 1. indexProdPage.html - задание исправление страницы к виду, который, с точки зрения кандидата является правильным и исправленным.
 
-    - Ссылка на сайт: [здесь](https://annagonos.github.io/kodeks-test/indexProdPage.html)
-    - Вы можете посмотреть решение [здесь](https://github.com/AnnaGonos/kodeks-test/blob/main/indexProdPage.html).
+- Ссылка на сайт: [здесь](https://annagonos.github.io/kodeks-test/indexProdPage.html)
+- Вы можете посмотреть решение [здесь](https://github.com/AnnaGonos/kodeks-test/blob/main/indexProdPage.html).
 
 ## 2. frontScript.js - задание исправление скрипта к виду, который, с точки зрения кандидата является правильным и исправленным.
-    - Вы можете посмотреть решение [здесь](https://github.com/AnnaGonos/kodeks-test/blob/main/frontScript.js) 
+- Вы можете посмотреть решение [здесь](https://github.com/AnnaGonos/kodeks-test/blob/main/frontScript.js) 
 
 ## 3. Есть некоторая строка (var str = 'fgfggg';), что будет, если мы возьмем str[0]?
 
@@ -57,7 +57,7 @@ var arr = [{date: '10.01.2017'}, {date: '05.11.2016'}, {date: '21.13.2002'}];
 
 Решение:
 
-    - Вы можете посмотреть решение [здесь](https://github.com/AnnaGonos/kodeks-test/blob/main/tasks/task-5.js)
+- Вы можете посмотреть решение [здесь](https://github.com/AnnaGonos/kodeks-test/blob/main/tasks/task-5.js)
 
 
 ## 6. Есть несколько слов, определить состоят ли они из одних и тех же букв('кот', 'ток', 'окт')
@@ -71,7 +71,7 @@ function sameWords(arr) {
 
 Решение:
 
-    - Вы можете посмотреть решение [здесь](https://github.com/AnnaGonos/kodeks-test/blob/main/tasks/task-6.js)
+- Вы можете посмотреть решение [здесь](https://github.com/AnnaGonos/kodeks-test/blob/main/tasks/task-6.js)
 
 
 ## 7. Объяснить в какой последовательности выведутся цифры и почему так.

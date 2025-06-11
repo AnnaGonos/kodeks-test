@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ru">
+<!-- добавила указание языка для улучшения доступности и SEO -->
+<head>
+    <meta charset="UTF-8">
+    <title>Моя первая страничка</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Caveat:wght@400..700&family=Comfortaa:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--    Можно по-хорошему выделить в отдельный файл-стилей, но пока оставлю здесь, то же самое со скриптом,
+    можно было бы в отдельный файл вынести -->
+    <style>
+        h1, h2, h3, h4, h5, p, a, span, button {
+            font-weight: 400;
+            font-family: 'Raleway', sans-serif;
+            margin: 0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            height: 100%;
+            width: auto;
+            margin: 0;
+            background-color: #FDF7EB;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1;
+            padding-bottom: 100px;
+        }
+
+        section {
+            padding: 40px 60px 40px 60px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            background-color: #FDF7EB;
+        }
+
+        section:first-child {
+            padding-top: 100px;
+            color: #ffffff;
+        !important;
+            background-color: #113027;
+        }
+
+        section:first-child a:hover {
+            color: #ffffff;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            outline: none;
+        }
+
+        a:hover {
+            color: #113027;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        ul {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            row-gap: 20px;
+            column-gap: 40px;
+        }
+
+        .warning {
+            padding: 5px 15px;
+            display: inline-flex;
+            background-color: chocolate;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        .about__img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .social-networks__list {
+            display: flex;
+            gap: 40px;
+        }
+
+        .social-networks__icons {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+        }
+
+        .social-networks__item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .filter-buttons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .filter-btn {
+            display: flex;
+            padding: 5px 15px;
+        }
+
+        button {
+            background-color: #FDF7EB;
+            border: 1px solid #113027;
+            border-radius: 10px;
+        }
+
+        .active {
+            background-color: #113027;
+            color: #FDF7EB;
+        }
+
+        .projects-list {
+            margin-top: 50px;
+        }
+
+        .project-item {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 40px;
+            background-color: #FFFAF5;
+            border: #113027 1px solid;
+            border-radius: 10px;
+            color: #113027;
+        }
+
+        .project-item img {
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 500px;
+        }
+
+        .project-item:hover {
+            background-color: #113027;
+            border: #113027 1px solid;
+            border-radius: 10px;
+            color: #FFFAF5;
+        }
+
+        .project-item__status {
+            color: #4a4a4a;
+        }
+
+        .project-item:hover .project-item__status {
+            color: #FDF7EB;
+        }
+
+        .social-networks {
+            display: flex;
+            margin-top: 20px;
+            gap: 20px;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <!--    About -->
+    <section class="about">
+        <h1>Привет всем!</h1>
+        <div>
+            <p>На этой страничке будет много классного.</p>
+            <span class="warning">Добавьте это в закладки!</span>
+        </div> <!--  Внутри тега <p>  нельзя использовать блочные элементы, такие как <div> -->
+        <img src="https://sun9-15.userapi.com/impg/joCBvOTp0cNxbLG5605yhUrYZ2K6oeiFhKMOVg/JyLWML70mTw.jpg?size=960x1280&quality=95&sign=12aefe31fd2253787f3f7d863b03aa4d&type=album"
+             alt="My photo" class="about__img">
+        <!--  </img> --- тег <img> самозакрывающийся, поэтому нет необходимости указывать его.-->
+        <p>Узнайте больше о моих увлечениях, проектах и идеях на этом сайте.</p>
+        <div class="social-networks">
+            <a href="https://www.example.com/social">Мои социальные сети:</a>
+            <div class="social-networks__list">
+                <a href="https://www.vk.com/id1" target="_blank" rel="noopener noreferrer"
+                   class="social-networks__item">
+                    <img src="https://img.icons8.com/?size=96&id=13977&format=png" alt="VK"
+                         class="social-networks__icons"> vk
+                </a>
+                <a href="https://t.me/s/gonosanna/" target="_blank" rel="noopener noreferrer"
+                   class="social-networks__item">
+                    <img src="https://img.icons8.com/?size=160&id=yEmPT1iidhE0&format=png" alt="Telegram"
+                         class="social-networks__icons"> tg
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="project">
+        <h2>О моих проектах</h2>
+        <p>Здесь вы можете найти полезную информацию о моих
+            текущих и завершенных проектах.</p>
+
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">Все проекты</button>
+            <button class="filter-btn" data-filter="done">Завершённые</button>
+            <button class="filter-btn" data-filter="work">В работе</button>
+        </div>
+
+        <ul class="projects-list">
+            <li class="project-item" data-status="work">
+                <img src="https://i.ytimg.com/vi/BGVtuy0Gwmw/maxresdefault.jpg" alt="Thumbnail проекта">
+                <h3>To-Do List</h3>
+                <p class="project-item__status">Project in work</p>
+            </li>
+            <li class="project-item" data-status="work">
+                <img src="https://ecx.images-amazon.com/images/I/91ju89oAXTL.png" alt="Музыкальный плеер">
+                <h3>Музыкальный плеер</h3>
+                <p class="project-item__status">Project in work</p>
+            </li>
+            <li class="project-item" data-status="work">
+                <img src="https://i.pinimg.com/736x/ac/02/35/ac02351b7ff19b358f4a140dc538e9f0.jpg"
+                     alt="Погодное приложение">
+                <h3>Weather Dashboard</h3>
+                <p class="project-item__status">Project in work</p>
+            </li>
+            <li class="project-item" data-status="done">
+                <img src="https://qiqinform.ru/wp-content/uploads/2024/07/besplatnyj-servis-meme-generator-pervyj-onlajn_1.jpg"
+                     alt="Генератор мемов">
+                <h3>Генератор мемов</h3>
+                <p class="project-item__status">Project done</p>
+            </li>
+            <li class="project-item" data-status="done">
+                <img src="https://lpfile.ru/wp-content/uploads/1/0/4/1047cd71ccbed6cc7ffd07ea2697ea81.png"
+                     alt="Конструктор кроссвордов">
+                <h3>Конструктор кроссвордов</h3>
+                <p class="project-item__status">Project done</p>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Счастливый конец страницы</h2>
+    </section>
+    <!-- было: <h1>Счастливый конец страницы</h1>, как правило, на странице не используют больше одного заголовка <h1>
+Во-первых из-за семантики, во-вторых из-за SEO (т.е. поисковые системы как-то неправильно или некорректно будут определять основную тему, в итоге получим путаницу)
+ Так же не знаю какую логику закладывали в строчку, возможно имелось в виду поменять на footer. Но ладно, пусть у нас на этой странице не будет header и footer,
+оставим только main.-->
+</main>
+
+<!--    Проведи код-ревью страницы, напиши замечания в виде комментарии, если они есть-->
+
+<!--    Комментарии больше по поводу структуры документa: Добавила стили, просто для красоты)
+        Возможно это было излишне, но я решила разделить текст на секции по смыслу, мне кажется так немного корректнее-->
+<!--    и логичнее выглядит в итоге вся страница. Так же некоторые элементы объединены в блоки (как например ссылки, хотя можно-->
+<!--    было бы их и в списке отобразить). Так же решила, что все проекты будут лежать как список (ul), как бы в контейнере.-->
+<!--    А отдельные проекты через li. Не совсем поняла что здесь имелось в виде, может нужно было просто <figure> и "проект-->
+<!--    в работе" это просто описание к изобажению. Все же мне видится это как li, добавить еще какую-нибудь ссылку на проект-->
+<!--    и в итоге получим полноценное портфолио. Честно не поняла что имели в виду под "Project in work". Мало того, что текст-->
+<!--    находится между неверными закрывающими тегами, так еще не понятна задумка. Зачем нужна эта строчка на английском.-->
+<!--    В общем, убрала эту строку, далее добавила проекты и решила, что добавить немного интерактива - и сделать фильтрацию по "проект готов" проект в работе".-->
+<!--    По условию задачи этого не требовалось, но все же хотелось написать мини код на JS)))-->
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const buttons = document.querySelectorAll('.filter-btn');
+        const projects = document.querySelectorAll('.project-item');
+
+        buttons.forEach(button => {
+            button.addEventListener('click', function () {
+                buttons.forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+
+                const filter = this.getAttribute('data-filter');
+
+                projects.forEach(project => {
+                    const status = project.getAttribute('data-status');
+
+                    if (filter === 'all') {
+                        project.style.display = 'block';
+                    } else {
+                        if (status === filter) {
+                            project.style.display = 'block';
+                        } else {
+                            project.style.display = 'none';
+                        }
+                    }
+                });
+            });
+        });
+    });
+</script>
+</body>
+</html>

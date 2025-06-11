@@ -5,7 +5,7 @@
 
 ## 1. indexProdPage.html - задание исправление страницы к виду, который, с точки зрения кандидата является правильным и исправленным.
 
-    - Ссылка на сайт:
+    - Ссылка на сайт: [здесь](https://annagonos.github.io/kodeks-test/indexProdPage.html)
     - Вы можете посмотреть решение [здесь](https://github.com/AnnaGonos/kodeks-test/blob/main/indexProdPage.html).
 
 ## 2. frontScript.js - задание исправление скрипта к виду, который, с точки зрения кандидата является правильным и исправленным.
